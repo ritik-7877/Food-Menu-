@@ -6,7 +6,6 @@ function DishCard({ dish, onAddDish, onRemoveDish, isSelected, onViewIngredients
       <div className="dish-info">
         <h4>
           {dish.name}
-          {/* Add a colored dot for food type */}
           <span className={`food-type-icon ${dish.type.toLowerCase()}`}></span>
         </h4>
         <p>{dish.shortDescription} <span className="read-more" onClick={() => onViewIngredients(dish)}>... Read more</span></p>

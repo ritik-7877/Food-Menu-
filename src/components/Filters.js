@@ -5,8 +5,8 @@ function Filters({
   onCategoryChange,
   searchTerm,
   onSearchChange,
-  foodTypeFilter,      // <-- New prop
-  onFoodTypeChange,  // <-- New prop
+  foodTypeFilter,    
+  onFoodTypeChange,  
   categoryCounts
 }) {
   const categories = ["STARTER", "MAIN COURSE", "DESSERT", "SIDES"];
@@ -34,7 +34,6 @@ function Filters({
         </div>
       </div>
       <div className="toggle-section">
-        {/* New Toggle Buttons */}
         <button 
           className={`toggle-btn ${foodTypeFilter === 'VEG' ? 'active' : ''}`}
           onClick={() => onFoodTypeChange(foodTypeFilter === 'VEG' ? 'ALL' : 'VEG')}
